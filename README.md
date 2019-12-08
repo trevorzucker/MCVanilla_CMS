@@ -14,8 +14,6 @@
 ## Demo:
  [Here is a demo link.](http://mcvanilla.me/site/)
 
- Current issue with the demo: Chat will not load most of the time. This is not an issue with code, it is an issue with my current host.
-
 ## To do:
  Finish web shop
  
