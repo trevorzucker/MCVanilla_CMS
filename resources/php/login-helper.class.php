@@ -30,7 +30,7 @@ class LoginHelper
 		if (!isset($storedUsernames))
 			$storedUUIDs = array();
 		if (!isset($storedUsernames[$loginid])) {
-			$conn = new mysqli("localhost", "vanilla_server", "mA9mKb37JxMRP6VU", "mc_vanilla");
+			$conn = new mysqli();
 			$findUUID = "SELECT username FROM playerdata WHERE weblogin_id = '$loginid'";
 			$result = $conn->query($findUUID);
 			$row = mysqli_fetch_assoc($result);
@@ -42,7 +42,7 @@ class LoginHelper
 	}
 
 	public static function getConnection() {
-		return new mysqli("localhost", "vanilla_server", "mA9mKb37JxMRP6VU", "mc_vanilla");
+		return new mysqli();
 	}
 
 	public static function CreateEntries() {
