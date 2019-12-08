@@ -79,15 +79,15 @@
 		}
 		$usr = $result["username"];
 
-		echo <<< text
-			<div class="entry fadein" style="color: $textcolor;" data-msgid="$id" data-username="$usr" data-message=$caster>
-				<img src="$image" class="$my userpic"></img>
-				<div class="$my carat" style="border-color: transparent $color transparent transparent;"></div>
-				<div class="$my message $clickable" style='background-color: $color;'>
+		echo "
+			<div class='entry fadein' style='color: $textcolor;' data-msgid='$id' data-username='$usr' data-message=$caster>
+				<img src='$image' class='$my userpic'></img>
+				<div class='$my carat' style='border-color: transparent $color transparent transparent;'></div>
+				<div class='$my message $clickable' style='background-color: $color;'>
 					$command$content
-					<div class="namedate">$username $time</div>
+					<div class='namedate'>$username $time</div>
 				</div>
 			</div>
-		text;
+		";
 	}
 ?>
