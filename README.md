@@ -14,7 +14,7 @@
 ## Demo:
  [Here is a demo link.](http://mcvanilla.me/site/)
 
-## Todo:
+## To do:
  Finish web shop
  
  Buy a better webserver that is more reliable and can handle more than one concurrent user
